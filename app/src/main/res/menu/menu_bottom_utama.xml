@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checked="true"
+        android:checkable="false"
+        android:title="Kembali"
+        android:id="@+id/mnuBack"
+        android:icon="@drawable/back"/>
+
+    <item
+        android:checked="true"
+        android:checkable="false"
+        android:title="Beranda"
+        android:id="@+id/mnuHome"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:checked="true"
+        android:checkable="false"
+        android:title="Maju"
+        android:id="@+id/mnuGo"
+        android:icon="@drawable/right"/>
+
+</menu>

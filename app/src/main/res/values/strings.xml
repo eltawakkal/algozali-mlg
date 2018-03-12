@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SIAMAS Al Ghozali</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hadits">“Recite the Quran and weep. If you cannot weep, then try to make yourself weep.” (Ibn Majah)</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:elevation="6dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:text="SIAMAS Al Ghozali (Donatur)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:elevation="6dp"
+            android:id="@+id/tabLayoutDonatur"
+            app:tabTextColor="#FFF"
+            app:tabSelectedTextColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabItem
+                android:icon="@drawable/list"
+                android:id="@+id/tabInven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--android:text="Data Inventaris"-->
+
+            <android.support.design.widget.TabItem
+                android:icon="@drawable/uang"
+                android:id="@+id/tabUang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--android:text="Laporan Keuangan"-->
+
+            <android.support.design.widget.TabItem
+                android:icon="@drawable/kegiatan"
+                android:id="@+id/tabKegiatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--android:text="Laporan Kegiaan"-->
+
+        </android.support.design.widget.TabLayout>
+
+        <WebView
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:id="@+id/webDonatur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:gravity="center"
+        android:background="#FFF"
+        android:id="@+id/layoutError"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/sorry"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Terjadi Kesalahan Saat Mengambil Data, Ketuk Tombol Dibawah Untuk Mengulangi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/imgRefresh"
+            android:src="@drawable/ic_refresh_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:elevation="8dp"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgGobackDonatur"
+                android:padding="15dp"
+                android:src="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgHomeDonatur"
+                android:padding="15dp"
+                android:src="@drawable/home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgGoForwordDonatur"
+                android:padding="15dp"
+                android:src="@drawable/right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

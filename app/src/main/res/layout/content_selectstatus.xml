@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        android:elevation="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selecet_menu"
+        android:textColor="#FFF"
+        android:id="@+id/btnDonatur"
+        android:text="Donatur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selecet_menu"
+        android:textColor="#FFF"
+        android:id="@+id/btnJamaah"
+        android:text="Jamaah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
